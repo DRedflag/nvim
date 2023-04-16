@@ -4,9 +4,12 @@ local servers = {
 	-- "html",
 	-- "tsserver",
 	"pyright",
-	-- "bashls",
+	"bashls",
 	"jsonls",
-	-- "yamlls",
+	"yamlls",
+	"clangd",
+	"cmake",
+	"lemminx",
 }
 
 local settings = {
