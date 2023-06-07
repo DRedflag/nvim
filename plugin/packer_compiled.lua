@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/redflag/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["goto-preview"] = {
+    loaded = true,
+    path = "/home/redflag/.local/share/nvim/site/pack/packer/start/goto-preview",
+    url = "https://github.com/rmagatti/goto-preview"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/home/redflag/.local/share/nvim/site/pack/packer/start/impatient.nvim",

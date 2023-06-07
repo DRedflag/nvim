@@ -41,6 +41,8 @@ M.setup = function()
 	}
 
 	vim.diagnostic.config(config)
+	vim.o.updatetime = 250
+	vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
 	vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 		border = "rounded",
