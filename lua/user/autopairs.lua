@@ -3,6 +3,8 @@ local status_ok, npairs = pcall(require, "nvim-autopairs")
 if not status_ok then
   return
 end
+local Rule = require('nvim-autopairs.rule')
+
 
 npairs.setup {
   check_ts = true,
@@ -24,6 +26,7 @@ npairs.setup {
     highlight_grey = "LineNr",
   },
 }
+npairs.add_rule(Rule("/*", "*/", {"c", "cpp"}))
 local cmp_autopairs = require "nvim-autopairs.completion.cmp"
 local cmp_status_ok, cmp = pcall(require, "cmp")
 if not cmp_status_ok then
