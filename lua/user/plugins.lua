@@ -40,13 +40,13 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
-  use { "wbthomason/packer.nvim" } -- Have packer manage itself
-  use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
-  use { "windwp/nvim-autopairs" } -- Autopairs, integrates with both cmp and treesitter
-  use { "numToStr/Comment.nvim" }
-  use { "JoosepAlviste/nvim-ts-context-commentstring" }
-  use { "kyazdani42/nvim-web-devicons"}
-  use { "kyazdani42/nvim-tree.lua", }
+  use { "wbthomason/packer.nvim", commit="ea0cc3c59f67c440c5ff0bbe4fb9420f4350b9a3" } -- Have packer manage itself
+  use { "nvim-lua/plenary.nvim" , commit="55d9fe89e33efd26f532ef20223e5f9430c8b0c0"} -- Useful lua functions used by lots of plugins
+  use { "windwp/nvim-autopairs" , commit="0f04d78619cce9a5af4f355968040f7d675854a1"} -- Autopairs, integrates with both cmp and treesitter
+  use { "numToStr/Comment.nvim" , commit="0236521ea582747b58869cb72f70ccfa967d2e89"}
+  use { "JoosepAlviste/nvim-ts-context-commentstring", commit="1277b4a1f451b0f18c0790e1a7f12e1e5fdebfee" }
+  use { "kyazdani42/nvim-web-devicons", commit="8b2e5ef9eb8a717221bd96cb8422686d65a09ed5"}
+  use { "kyazdani42/nvim-tree.lua", commit="e8ea62c198f6e91197072350c119e8cc8e7f963a"}
   use { "akinsho/bufferline.nvim" }
   use { "moll/vim-bbye" }
   use { "nvim-lualine/lualine.nvim" }
